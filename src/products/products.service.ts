@@ -1,6 +1,4 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { listenerCount } from 'process';
-import { StringifyOptions } from 'querystring';
 import { Product } from './product.model';
 
 @Injectable()
@@ -54,7 +52,9 @@ export class ProductsService {
   }
 
   private findProduct(prodId: string): [Product, number] {
-    const productIndex = this.products.findIndex((product) => product.id === prodId);
+    const productIndex = this.products.findIndex(
+      (product) => product.id === prodId,
+    );
     const product = this.products[productIndex];
     if (!product) {
       throw new NotFoundException('Cannot find product.');
@@ -62,6 +62,4 @@ export class ProductsService {
 
     return [product, productIndex];
   }
-
-
 }
