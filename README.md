@@ -8,7 +8,7 @@
 
 ## Description
 
-A sample API by @coderDx featuring the [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. 
+A sample API by @coderDx featuring the [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. Based on [this video](https://youtu.be/F_oOtaxb0L8).
 
 ## Installation
 
