@@ -43,7 +43,7 @@ $ yarn test:cov
 ```
 
 ## Using
-This API features all CRUD operations for a sample 'Products' table. No actual database is being used for this demo. Data is actually stores in a `products` array in memory, and will be lost on every reload.
+This API features all CRUD operations for a sample 'Products' table. No actual database is being used for this demo. Data is actually stored in a `products` array in memory, and will be lost on every reload.
 
 A Product has the following model:
 ```TS
